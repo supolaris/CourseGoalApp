@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
+import { MyAppColors } from "../../components/colors/colors";
 
 export const HomeStyles = StyleSheet.create({
     container: {
         flex: 1,
+        paddingTop: 40,
         paddingHorizontal: 10,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: MyAppColors.peach,
 
     },
     inputView: {
@@ -47,7 +50,9 @@ export const HomeStyles = StyleSheet.create({
     goalListMainView: {
         flex: 4,
         paddingHorizontal: 15,
-        paddingVertical: 25,
+        paddingVertical: 10,
+        borderTopWidth: 1,
+        marginTop: 40
 
 
     },

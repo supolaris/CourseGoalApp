@@ -10,7 +10,11 @@ export default function MyNativeStack() {
     const NativeStack = createNativeStackNavigator();
     return (
         <NavigationContainer>
-            <NativeStack.Navigator>
+            <NativeStack.Navigator
+            screenOptions={{
+                headerShown: false
+            }}
+            >
 
                 <NativeStack.Screen
                     name="Home_Screen"
