@@ -10,31 +10,28 @@ export const HomeStyles = StyleSheet.create({
         backgroundColor: MyAppColors.peach,
 
     },
-    inputView: {
-        flex: 1,
-        //flexDirection: 'row',
-        alignItems: 'center', 
-        borderBottomWidth: 1,
-        //backgroundColor: 'red',
-        justifyContent: 'center'
-        
-       // paddingBottom: 20
-       //justifyContent: 'center',
-       //alignContent: 'center'
-
+    addGoalButton: {
+        borderRadius: 10,
+        backgroundColor: MyAppColors.darkGreen
 
     },
+    inputView: {
+        flex: 4,
+        alignItems: 'center', 
+        borderBottomWidth: 1,
+        backgroundColor: MyAppColors.peach
+    },
     textInput: {
-        width: '80%'
+        width: '80%',
+        marginTop: -50
 
     },
     buttonModal: {
-        //flex: 0,
         marginHorizontal: 20,
         paddingHorizontal: 15,
         paddingVertical: 5,
         marginTop: 3,
-        backgroundColor: '#5E1675',
+        backgroundColor: 'green',
         
 
     },
@@ -57,7 +54,7 @@ export const HomeStyles = StyleSheet.create({
 
     },
     goalMainitle: {
-        color: '#78A083',
+        color: MyAppColors.darkGreen,
         fontSize: 25,
         fontWeight: 'bold',
         paddingBottom: 10

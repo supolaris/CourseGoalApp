@@ -17,7 +17,6 @@ yarn add react-native-screens react-native-safe-area-context
 yarn add @react-navigation/native-stack
 ```
 
-
 # React navtive vector icons
 ```bash
 npm install --save react-native-vector-icons
@@ -28,19 +27,7 @@ Edit android/app/build.gradle (NOT android/build.gradle) and add
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 ```
 
-
+# React native lottie
 ```bash
-
-```
-
-```bash
-
-```
-
-```bash
-
-```
-
-```bash
-
+yarn add lottie-react-native
 ```

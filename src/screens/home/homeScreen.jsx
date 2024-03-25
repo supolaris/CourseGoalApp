@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import { HomeStyles } from "./homeScreenStyles";
 import { TextInput, Button, Title } from 'react-native-paper';
+import Lottie from "../../components/lottie/lottie";
+import { MyAppColors } from "../../components/colors/colors";
 
 export default function HomeScreen() {
 
@@ -50,6 +52,7 @@ export default function HomeScreen() {
         <View style={HomeStyles.container}>
 
             <Button
+                style={HomeStyles.addGoalButton}
                 onPressIn={modalHandler}
                 //style={HomeStyles.button}
                 mode="contained"
@@ -60,9 +63,15 @@ export default function HomeScreen() {
             {modalIsVisible &&
                 <Modal
                     visible={modalIsVisible}
-                    animationType="slide"
+                    animationType="fade"
+                    style={{ backgroundColor: 'red' }}
                 >
+
                     <View style={HomeStyles.inputView}>
+                        <Title
+                            style={{marginBottom: -200, paddingTop: 100, color: 'green', fontSize: 35, fontWeight: 'bold'}}>Goals
+                        </Title>
+                        <Lottie />
 
                         <TextInput
                             style={HomeStyles.textInput}
@@ -71,7 +80,6 @@ export default function HomeScreen() {
                             mode="outlined"
 
                         />
-
                         <View style={{ flexDirection: 'row', marginTop: 10, justifyContent: 'center' }}>
                             <Button
                                 onPressIn={addGoalHandler}
@@ -89,12 +97,7 @@ export default function HomeScreen() {
                                 Cancel
                             </Button>
                         </View>
-
-
-
                     </View>
-
-
                 </Modal>
             }
 
@@ -103,7 +106,7 @@ export default function HomeScreen() {
                 style={HomeStyles.goalListMainView}
             >
                 <Title
-                    style={HomeStyles.goalMainitle}>Goals
+                    style={HomeStyles.goalMainitle}>Goals to complete
                 </Title>
 
                 <FlatList style={HomeStyles.goalListView}
