@@ -35,10 +35,10 @@ yarn add lottie-react-native
 
 # ScreenShots
 
-Add Goal
+
 ![courseGoal SS1](https://github.com/supolaris/CourseGoalApp/assets/88381507/ffaad3fa-0c36-4366-ad2c-9030661ea94b)
-Delete a goal
+
 ![courseGoal SS2](https://github.com/supolaris/CourseGoalApp/assets/88381507/2a11ac23-5769-405f-b598-2abfaf1df55a)
-All goals
+
 ![courseGoal SS3](https://github.com/supolaris/CourseGoalApp/assets/88381507/b79d487c-ff49-4486-9957-414712b4956c)
 
